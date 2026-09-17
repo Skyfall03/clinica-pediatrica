@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agendar Cita - Clínica Pediátrica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Clínica Pediátrica</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="equipo.html">Equipo Médico</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="citas.html">Agendar Cita</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Agendar una cita</h2>
+
+    <div class="campo">
+      <label for="fecha">Elige una fecha</label>
+      <input type="date" id="fecha">
+    </div>
+
+    <div id="horarios-disponibles"></div>
+
+    <form id="form-cita" style="display: none;">
+      <input type="hidden" id="fecha-elegida">
+      <input type="hidden" id="hora-elegida">
+
+      <div class="campo">
+        <label for="nombre-paciente">Nombre del paciente</label>
+        <input type="text" id="nombre-paciente" required>
+      </div>
+
+      <div class="campo">
+        <label for="telefono-paciente">Teléfono</label>
+        <input type="tel" id="telefono-paciente" required>
+      </div>
+
+      <p id="resumen-cita"></p>
+
+      <button type="submit">Confirmar cita</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Teléfono: (505) 0000-0000 | Dirección: Managua, Nicaragua</p>
+  </footer>
+
+  <script src="citas.js"></script>
+</body>
+</html>

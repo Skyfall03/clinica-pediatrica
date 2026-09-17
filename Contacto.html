@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contactanos - Clínica Pediátrica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Clínica Pediátrica</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="equipo.html">Equipo Médico</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contáctanos</h2>
+<form id="form-contacto">
+  <div class="campo">
+    <label for="nombre">Nombre completo</label>
+    <input type="text" id="nombre" name="nombre" required>
+  </div>
+
+  <div class="campo">
+    <label for="telefono">Teléfono</label>
+    <input type="tel" id="telefono" name="telefono" required>
+  </div>
+
+  <div class="campo">
+    <label for="email">Correo electrónico</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+
+  <div class="campo">
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+  </div>
+
+  <button type="submit">Enviar mensaje</button>
+
+  </main>
+
+  <footer>
+    <p>Teléfono: (505) 0000-0000 | Dirección: Managua, Nicaragua</p>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
